@@ -24,3 +24,11 @@ listaNumeros = [...listaNumeros, 6, 7, 8, 9, 10]; // adiciona dados da array lis
 console.log(listaNumeros);
 console.log('\n');
 // Exemplo 06 - Exemplo de Array com Laço de iteração
+let linguagensArray = new Array('Javascript', 'Java', 'Python', 'PHP', 'C#');
+function funcaoLinguagens(linguagens) {
+    for (let i = 0; i < linguagens.length; i++) { // looping para exibir todos os objetos da array
+        console.log(linguagensArray[i]); // exibilos na tela
+    }
+}
+funcaoLinguagens(linguagensArray); // chamando a funcao com parametro desejado no caso linguagensArray
+// quew vai exibir todos os dados leia linha 43 para entender a funcão
