@@ -7,6 +7,29 @@
 
 let pessoa : [string, string, number ];
 
-pessoa = ['Denerval', 'Desenvolvedor Mobile', 36];
+pessoa = ['Denerval', 'Desenvolvedor Mobile', 36]; // tem que ser na ordem o type senão da erro
 
 console.log(pessoa)
+
+
+// Exemplo 02 - acessando o valor da Tupla
+
+let pessoa2 : [string, string, number ];
+
+pessoa2 = ['Denerval', 'Desenvolvedor Mobile', 36];  
+
+console.log(pessoa2[1]) // para acessar é a mesma premissa igual uma array normal
+
+
+// Exemplo 03 - Outra forma de usar Tuplas em Typescript(com labels)
+
+
+
+
+// Exemplo 04 - Usando Tuplas com Spread Operator
+
+let listaFrutas: [string, ...string[]] = ['abacaxi', 'laranja', 'maçã', 'melancia','manga' ];// esse ...string[](spread operator) está dizendo que os tipos de dados
+                                                                                            // vão ser todos strings pode ser 5 ou 5000 os proximos todos vão ser string ..  
+                                                                                            // é uma lista heterogenia(todos os tipos são o mesmo) mas pode ser variados
+console.log(...listaFrutas[1]); // para acessar os dados se usa o spread operator                                                                                             
+console.log(...listaFrutas); // tanto 1 item como todo o conteudo da Tupla 
