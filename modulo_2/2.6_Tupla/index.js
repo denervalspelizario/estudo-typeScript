@@ -16,8 +16,12 @@ console.log(pessoa3);
 console.log('\n');
 // Exemplo 04 - Usando Tuplas com Spread Operator
 let listaFrutas = ['abacaxi', 'laranja', 'maçã', 'melancia', 'manga']; /* esse ...string[](spread operator) está dizendo que os tipos de dados
-                                                                                               vão ser todos strings pode ser 5 ou 5000 os proximos todos vão ser string ..
-                                                                                               é uma lista heterogenia(todos os tipos são o mesmo) mas pode ser variados */
+                                                                                               vão ser todos strings pode ser 5 ou 5000 os proximos todos vão ser string ..                                                                     é uma lista heterogenia(todos os tipos são o mesmo) mas pode ser variados */
 console.log(...listaFrutas[1]); // para acessar os dados se usa o spread operator                                                                                             
 console.log(...listaFrutas); // tanto 1 item como todo o conteudo da Tupla 
+console.log('\n');
+// Exemplo 05 - Lista Heterogênea de Tupla
+// 1 numero 2 booleano e depois array de strings neste caso recebe como spread operator  a array listaFrutas que contem varias strings
+let listaFrutas2 = [5, true, ...listaFrutas];
+console.log(listaFrutas2);
 console.log('\n');
