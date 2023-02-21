@@ -43,3 +43,23 @@ let listaFrutas2 : [number, boolean, ...string[]] = [5, true, ...listaFrutas]
 console.log(listaFrutas2)
 console.log('\n')
 
+// Exemplo 06 - Uso de Função com Tuplas
+
+function listarPessoas(nome: string[], idades: number[]){ // funcao com uma tupla de nomes com strings e outra tupla de idades com numbers
+    return [...nome, ...idades]
+}
+
+let resultado = listarPessoas(['Denerval', 'Selma'], [35,54])  
+
+console.log(resultado);
+console.log('\n');
+
+// Exemplo 07 - Labeled Tuples com Spread Operator numa função
+
+type Nome =
+           | [primeiroNome: string, sobrenome: string]
+           | [ primeiroNome: string, nomeMeio: string, sobrenome: string]
+
+function criarPessoa(...nome: Nome){
+    return [...nome];
+}           

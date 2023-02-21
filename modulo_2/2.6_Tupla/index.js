@@ -25,3 +25,13 @@ console.log('\n');
 let listaFrutas2 = [5, true, ...listaFrutas];
 console.log(listaFrutas2);
 console.log('\n');
+// Exemplo 06 - Uso de Função com Tuplas
+function listarPessoas(nome, idades) {
+    return [...nome, ...idades];
+}
+let resultado = listarPessoas(['Denerval', 'Selma'], [35, 54]);
+console.log(resultado);
+console.log('\n');
+function criarPessoa(...nome) {
+    return [...nome];
+}
