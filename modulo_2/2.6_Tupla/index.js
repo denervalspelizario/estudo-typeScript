@@ -35,3 +35,6 @@ console.log('\n');
 function criarPessoa(...nome) {
     return [...nome];
 }
+console.log(criarPessoa('Denerval', 'Pelizario'));
+console.log(criarPessoa('Denerval', 'Pelizario'));
+console.log(criarPessoa('Denerval', 'Desenvolvedor', 'Mobile'));
